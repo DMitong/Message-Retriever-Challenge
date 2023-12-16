@@ -1,66 +1,45 @@
-## Foundry
+# Message Retriever Smart Contract
 
-**Foundry is a blazing fast, portable and modular toolkit for Ethereum application development written in Rust.**
+## Background
 
-Foundry consists of:
+The smart contract in this repository is part of a 15 day smart contract building challenge. The challenge has three levels of difficulty, namely:
 
--   **Forge**: Ethereum testing framework (like Truffle, Hardhat and DappTools).
--   **Cast**: Swiss army knife for interacting with EVM smart contracts, sending transactions and getting chain data.
--   **Anvil**: Local Ethereum node, akin to Ganache, Hardhat Network.
--   **Chisel**: Fast, utilitarian, and verbose solidity REPL.
+- Basic: The challenges from Day 1 to Day 5
+- Intermediate: The challenges from Day 6 to Day 10
+- Advanced: The challenges from Day 11 to Day 15
 
-## Documentation
+## Challenge Task: Basic 1
 
-https://book.getfoundry.sh/
+Write a smart contract that can store and retrieve a message. The message should be a string variable that can be set by the contract owner or anyone who calls the contract. The contract should also have a function to get the current message.
 
-## Usage
+## Building
 
-### Build
+**Contract:** MRetriever.sol
 
-```shell
-$ forge build
-```
+**Purpose:** This contract allows storing and retrieving a single message on the blockchain. Anyone can set the message, but only the contract owner can retrieve it.
 
-### Test
+#### Features:
 
-```shell
-$ forge test
-```
+- Stores a single string variable as the message.
+- Anyone can set a new message using the setMessage function.
+- Anyone can retrieve the current message using the getMessage function.
 
-### Format
+#### Testing
 
-```shell
-$ forge fmt
-```
+**Test Contract:** MRetriever.t.sol
 
-### Gas Snapshots
+**Purpose:** This contract tests the functionality of the MessageRetriever contract.
 
-```shell
-$ forge snapshot
-```
+**Tests:** Tests setting and retrieving a message.
 
-### Anvil
+## Disclaimer:
 
-```shell
-$ anvil
-```
+This is provided as a basic example and should not be used in production without proper security and testing. If to be used in production, use at your own risk.
 
-### Deploy
+## License
 
-```shell
-$ forge script script/Counter.s.sol:CounterScript --rpc-url <your_rpc_url> --private-key <your_private_key>
-```
+This contract is unlicensed.
 
-### Cast
+## Acknowledgments
 
-```shell
-$ cast <subcommand>
-```
-
-### Help
-
-```shell
-$ forge --help
-$ anvil --help
-$ cast --help
-```
+This contract was developed and tested using Foundry, a Solidity development and testing platform.
