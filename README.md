@@ -12,25 +12,14 @@ The smart contract in this repository is part of a 15 day smart contract buildin
 
 Write a smart contract that can store and retrieve a message. The message should be a string variable that can be set by the contract owner or anyone who calls the contract. The contract should also have a function to get the current message.
 
-## Building
+## Contribution
 
-**Contract:** MRetriever.sol
+**Feel free to:**
 
-**Purpose:** This contract allows storing and retrieving a single message on the blockchain. Anyone can set the message, but only the contract owner can retrieve it.
-
-#### Features:
-
-- Stores a single string variable as the message.
-- Anyone can set a new message using the setMessage function.
-- Anyone can retrieve the current message using the getMessage function.
-
-#### Testing
-
-**Test Contract:** MRetriever.t.sol
-
-**Purpose:** This contract tests the functionality of the MessageRetriever contract.
-
-**Tests:** Tests setting and retrieving a message.
+- Critique the code and send me any comment via <a href="www.x.com/DMitong">Twitter</a> or via <a href="mailto:mitongdapal@gmail.com">Email</a>.
+- Modify the contract to add new features or functionalities.
+- Experiment with different deployment parameters and usage scenarios.
+- Contribute to the code or suggest improvements by raising issues or pull requests.
 
 ## Disclaimer:
 
