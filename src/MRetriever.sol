@@ -11,12 +11,15 @@ The contract should also have a function to get the current message.
 */
 
 contract MessageRetriever {
+    // Private state variable to store the message.
     string private message;
 
+    // setMessage allows anyone to change the stored message in the contract.
     function setMessage(string memory newMessage) public {
         message = newMessage;
     }
 
+    // getMessage allows anyone to retrieve the stored message from the contract.
     function getMessage() public view returns (string memory) {
         return message;
     }
